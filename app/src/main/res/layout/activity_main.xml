@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/ishmael_njihia"
+
+        android:textColor="@color/design_default_color_primary"
+        android:textFontWeight="@integer/material_motion_duration_long_1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/images"
+        tools:layout_editor_absoluteY="34dp"
+        tools:ignore="HardcodedText,MissingConstraints"
+        android:contentDescription="TODO" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Height"
+        android:layout_below="@id/imageView"
+        android:gravity="center"
+        android:hint="@string/enter_height_in_metres"
+        android:textColor="#fffffff"
+        android:background="#30fffffff"
+        android:textColorHint="@color/white"
+        android:padding="30dp"
+        tools:ignore="MissingConstraints,TextFields" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Weight"
+        android:layout_below="@id/Height"
+        android:gravity="center"
+        android:hint="KGs"
+        android:textColor="#fffffff"
+        android:background="#30fffffff"
+        android:textColorHint="@color/white"
+        android:padding="30dp"
+        tools:ignore="MissingConstraints"
+        android:inputType="TODO" />
+
+
+
+</RelativeLayout>
